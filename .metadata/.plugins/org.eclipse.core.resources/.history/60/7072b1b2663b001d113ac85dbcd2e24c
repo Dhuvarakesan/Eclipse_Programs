@@ -1,0 +1,19 @@
+package logic;
+
+public class AlterTheCase {
+
+	public static void main(String[] args) {
+		String input="DhuVarAKeSaN";
+		String result="";
+		for(int h=0;h<input.length();h++){
+	           if(Character.isUpperCase(input.charAt(h))){
+	        	   result+=String.valueOf(Character.toLowerCase(input.charAt(h)));
+	           }
+	           else{
+	        	   result+=String.valueOf(Character.toUpperCase(input.charAt(h)));
+	           }
+	       }
+		System.out.println(result);
+	}
+
+}

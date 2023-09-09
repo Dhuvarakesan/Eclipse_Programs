@@ -1,0 +1,21 @@
+package logic;
+
+public class ReMileStoneOne4q {
+
+	public static void main(String[] args) {
+		String in[]=new String[]{"oreo","apple","sirish"};
+         //oreo,sirish,apple
+		//mango,banana
+		//ate,ace,girl
+		String result="";
+		for(String i:in) {
+			i=i.replaceAll("[aeiouAEIOU]", "*");
+			if(i.charAt(0)=='*'&&i.charAt(i.length()-1)=='*') {
+				result+=i;
+			}
+			
+		}
+		System.out.println(result);
+	}
+
+}

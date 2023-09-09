@@ -1,0 +1,15 @@
+package logic;
+
+public class Demo {
+
+	public static void main(String[] args) {
+	String []a=new String[]{"1","3","4","5"};
+	String []b=new String[]{"1","2","4","5"};
+
+if(a.equals(b))
+	System.out.print("Equal");
+else
+	System.out.print("Not Equal");
+
+}
+}

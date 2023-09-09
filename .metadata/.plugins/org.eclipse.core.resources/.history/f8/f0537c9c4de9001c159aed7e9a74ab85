@@ -1,0 +1,35 @@
+package logic;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Collections;
+public class FrequencyOfArray {
+
+	public static void main(String[] args) {
+		int max=0;
+		int[] arr=new int [] {2,3,2,4,5,12,2,3,3,3,12};
+		ArrayList<Integer> l1=new ArrayList<>();
+		HashSet<Integer> h1=new HashSet<>();
+		Arrays.sort(arr);
+		for(int i:arr)
+		System.out.print(i);
+		int count=0;
+		for(int i=0;i<arr.length;i++) {
+			int t=arr[i];
+			if(t==arr[i+1]) {
+				count++;
+			}
+			int r=0;
+			if(count >max)
+				max=count;
+			    r=t;
+			for(int j=0;j<max;j++) {
+				System.out.print(r);
+			}
+		}
+			}
+		
+
+	}
+
+

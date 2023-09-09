@@ -1,0 +1,34 @@
+package logic;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Acc1 {
+	public static void main(String[] args) {
+		ArrayList<Character> a1=new ArrayList<Character>();
+		ArrayList<Character> a2=new ArrayList<Character>();
+		String in="abcd";
+		String inn="cbdad";
+		char a[]=in.toCharArray();
+		char b[]=inn.toCharArray();
+		for(char i:a)
+			a1.add(i);
+		for(char i:b)
+			a2.add(i);
+		int i=0;
+		for(;;) {
+				int t=Collections.frequency(a1, a[i]);
+				int t1=Collections.frequency(a2, b[i]);
+				if(t!=t1) {
+				System.out.println(b[i]);
+				break;}
+				i++;
+		}
+		}
+	
+
+	}
+
+

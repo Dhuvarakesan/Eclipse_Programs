@@ -1,0 +1,33 @@
+package logic;
+
+import java.util.Arrays;
+
+public class SumOfPrimeNumberInArray {
+
+	public static void main(String[] args) {
+		int[] input1=new int[] {10,41,18,50,43,31,29,25,59,96,67};
+		int sum=0;
+		int k=0;
+		int arr[]=new int[input1.length];
+		for(int i:input1) {
+		boolean f=true;
+		for(int j=2;j<i;){
+			if(i%j==0)
+			f=false;
+			break;
+		}
+		if(f) {
+			arr[k]=i;
+			k++;
+		}
+		}
+System.out.println(Arrays.toString(arr));
+	}
+}
+        
+        
+
+	
+
+
+

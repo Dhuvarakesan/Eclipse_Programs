@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;training.Prp&apos; to &apos;Swap&apos;&#x0D;&#x0A;- Original project: &apos;training&apos;&#x0D;&#x0A;- Original element: &apos;training.Prp&apos;&#x0D;&#x0A;- Renamed element: &apos;training.Swap&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Prp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;training{Prp.java[Prp" matchStrategy="1" name="Swap" qualified="false" references="true" similarDeclarations="false" stamp="1651910317246" textual="false" version="1.0"/>
+</session>

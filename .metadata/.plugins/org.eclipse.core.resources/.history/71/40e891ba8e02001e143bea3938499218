@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.regular;
+
+/**
+ * @author Admin
+ *
+ */
+public class CheckingMobileNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

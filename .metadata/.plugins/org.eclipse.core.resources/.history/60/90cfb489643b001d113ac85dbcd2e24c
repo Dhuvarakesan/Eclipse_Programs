@@ -1,0 +1,22 @@
+package logic;
+
+public class FindDuplicate {
+
+	public static void main(String[] args) {
+		String in="112234567234";
+		String output="";
+		int c=0;
+		for(int i=0;i<in.length();i++) {
+			for(int j=0;j<in.length();j++) {
+				if((i!=j)&&(in.charAt(i)==in.charAt(j))&&(output.indexOf(in.charAt(i))==-1)) {
+					output+=in.charAt(i);
+					c++;
+					//break;
+				}
+					
+			}
+		}
+		System.out.println(output+" "+c);
+	}
+
+}

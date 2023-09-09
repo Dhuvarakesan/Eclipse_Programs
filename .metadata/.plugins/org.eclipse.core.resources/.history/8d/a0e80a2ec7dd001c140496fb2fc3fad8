@@ -1,0 +1,11 @@
+package logic;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Fibonacci a=new Fibonacci();
+		System.out.print(a.fib(4));
+
+	}
+
+}

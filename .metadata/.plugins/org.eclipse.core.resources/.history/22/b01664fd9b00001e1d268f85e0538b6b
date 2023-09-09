@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.regular;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * @author Admin
+ *
+ */
+public class Demopattern {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="^(+91)[6-9][0-9]{9}$";
+		String targetString="91+98765432123222";
+		Pattern patObj= Pattern.compile("(+91)[6-9][0-9]{9}$");
+		Matcher matObj=patObj.matcher(targetString);
+		while(matObj.find()) {
+			System.out.println(matObj.start()+"  "+matObj.group());
+		}
+
+	}
+
+}

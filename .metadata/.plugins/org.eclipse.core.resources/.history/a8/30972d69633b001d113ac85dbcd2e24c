@@ -1,0 +1,12 @@
+package logic;
+
+public class FindDuplicate {
+
+	public static void main(String[] args) {
+		String in="1122334567";
+		in.repeat(2);
+		System.out.println(in);
+
+	}
+
+}

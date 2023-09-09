@@ -1,0 +1,13 @@
+package logic;
+
+public class ReplaceStringUsingRegex {
+
+	public static void main(String[] args) {
+		String in="wipro!2545 limited";
+		String s=in.replaceAll("[^A-z]","");
+		System.out.println(s);
+	
+
+	}
+
+}

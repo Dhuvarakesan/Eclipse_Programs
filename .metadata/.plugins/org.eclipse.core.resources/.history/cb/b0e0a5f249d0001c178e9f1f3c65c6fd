@@ -1,0 +1,12 @@
+package training;
+
+public class Box {
+	int width;
+	int height;
+	int depth;
+ public int volume (int a,int b, int c) {
+	 int volume;
+	 volume=(a*b*c);
+	 return volume;
+ }
+}

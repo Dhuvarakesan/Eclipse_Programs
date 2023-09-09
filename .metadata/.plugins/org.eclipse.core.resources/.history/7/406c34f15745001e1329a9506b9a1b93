@@ -1,0 +1,83 @@
+package stepdefenition;
+
+
+
+import java.net.MalformedURLException;
+
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import repository.Repository;
+
+
+public class StepDefenitionCyclos extends Helperclass {
+	ExtentHtmlReporter htmlreporter;
+	ExtentReports extent;
+	@Given("I want to open the cyclos app and open using demo URL")
+	public void i_want_to_open_the_cyclos_app_and_open_using_demo_url() throws MalformedURLException {
+             Helperclass.precondition();
+            Helperclass.urlsend();
+	    
+	}
+
+
+@Given("I should give the username  and password  login")
+public void i_should_give_the_username_and_password_login() throws InterruptedException {
+	Helperclass.login();
+   
+}
+
+	@When("I want to cancel the scan fingerprint option and proceed")
+	public void i_want_to_cancel_the_scan_fingerprint_option_and_proceed() throws InterruptedException {
+		Helperclass.fingerprintcancel();
+	    
+	}
+
+	@When("I wanto choose not now for pin and email option")
+	public void i_wanto_choose_not_now_for_pin_and_email_option() throws InterruptedException {
+		Helperclass.notnow();
+	}
+
+	@When("I want to click the payment menu and select to system account")
+	public void i_want_to_click_the_payment_menu_and_select_to_system_account() throws InterruptedException {
+		Helperclass.paymentmenu();
+	    
+	}
+
+	@Then("I want to enter the amount and make a payment")
+	public void i_want_to_enter_the_amount_and_make_a_payment() throws InterruptedException {
+	Helperclass.makeapayment();
+	    
+	}
+
+	@Then("check more outcomes")
+	public void check_more_outcomes() {
+		
+			
+			
+			driver.closeApp();
+//			 htmlreporter = new ExtentHtmlReporter("cyclosreporter.html");
+//			 extent = new ExtentReports();
+//			extent.attachReporter(htmlreporter);
+//			ExtentTest test=extent.createTest("Android","cyclos");
+//			test.log(Status.INFO,"login failed");
+//			extent.flush();
+			
+			
+	
+	    
+	}
+
+
+}

@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.regular;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * @author Admin
+ *
+ */
+public class Demopattern {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input="a*";
+		String targetString="aabavayaaayaaanaa";
+		Pattern patObj= Pattern.compile(input);
+		Matcher matObj=patObj.matcher(targetString);
+		while(matObj.find()) {
+			System.out.println(matObj.start()+"  "+matObj.group());
+		}
+
+	}
+
+}

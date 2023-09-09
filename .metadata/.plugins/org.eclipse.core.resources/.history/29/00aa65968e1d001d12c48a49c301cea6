@@ -1,0 +1,13 @@
+package logic;
+
+public class Zoho3 {
+
+	public static void main(String[] args) {
+		String in="(a+b)(a*B)";
+		in=in.replaceAll("[^()]","");
+		System.out.println(in);
+		System.out.println(in.length());
+
+	}
+
+}

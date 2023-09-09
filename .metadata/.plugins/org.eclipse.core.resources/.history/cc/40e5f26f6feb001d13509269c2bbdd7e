@@ -1,0 +1,46 @@
+package ilink;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+class NameComparator implements Comparator<person>{  
+public int compare(person s1,person s2){  
+return s1.fname.compareTo(s2.fname);  
+}  
+}  
+class person{
+	String fname;
+	String lname;
+	person(String a,String b){
+		fname=a;
+		lname=b;
+	}
+	public String getFname() {
+		return fname;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	
+}
+public class Compdemo {
+
+	public static void main(String[] args) {
+		ArrayList<person> l=new ArrayList();
+		l.add(new person("dhuvara","kesan"));
+		l.add(new person("jaga","selvam"));
+		l.add(new person("anbu","rose"));
+		l.add(new person("praveen","murugan"));
+		Collections.sort(l,new NameComparator());
+		for(person st: l){  
+			System.out.println(st.fname+" "+st.lname);  
+			}  
+	}
+
+}

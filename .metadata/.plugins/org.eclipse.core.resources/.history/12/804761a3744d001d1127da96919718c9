@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.Arrays;
+
+public class Practicee {
+	public static void main (String []args) {
+		int arr[]=new int [] {11,34,6,9,1,2,6,4,9,5};
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr.length;j++) {
+				if(arr[i]<arr[j]) {
+					int t=arr[i];
+					arr[i]=arr[j];
+					arr[j]=t;
+				}
+			}
+		}
+		int l_3=arr[arr.length-1]+arr[arr.length-2]+arr[arr.length-3];
+		int s_2=arr[0]+arr[1];
+		System.out.println(l_3);
+		System.out.println(s_2);
+	}
+
+}

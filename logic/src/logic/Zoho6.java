@@ -1,0 +1,15 @@
+package logic;
+
+public class Zoho6 {
+
+	public static void main(String[] args) {
+		String in="test123string";
+		String check="st";
+		if(in.contains(check)) 
+			System.out.println(in.indexOf(check.charAt(0)));
+			else
+				System.out.println("-1");
+
+	}
+
+}

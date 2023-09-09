@@ -1,0 +1,16 @@
+package logic;
+
+public class Acc1 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String in="kxml";
+		String inn="klxml";
+		char a[]=in.toCharArray();
+		char b[]=inn.toCharArray();
+	if(a.equals(b))
+		System.out.println("hello");
+		}
+
+	}
+
+

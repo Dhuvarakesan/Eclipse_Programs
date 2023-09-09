@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Helperclass.java&apos; to &apos;src&apos;&#x0D;&#x0A;- Original project: &apos;mobileautomate&apos;&#x0D;&#x0A;- Destination element: &apos;src&apos;&#x0D;&#x0A;- Original element: &apos;stepdefenition.Helperclass.java&apos;" description="Copy compilation unit" element1="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;stepdefenition{Helperclass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1693546008804" target="/mobileautomate/src" units="1" version="1.0"/>
+</session>

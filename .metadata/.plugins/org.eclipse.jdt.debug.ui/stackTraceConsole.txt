@@ -1,0 +1,26 @@
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot read properties of undefined (reading '0') 
+Host info: host: 'DESKTOP-9ST93DG', ip: '192.168.121.145'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:udid=caa9d2b4, appium:appActivity=org.cyclos.mobile.MainActivity, appium:deviceName=Redmi Note 11, platformName=ANDROID, appium:automationName=UIAutomator2, appium:platformVersion=11, appium:appPackage=org.cyclos.mobile}], desiredCapabilities=Capabilities {appium:appActivity: org.cyclos.mobile.MainActivity, appium:appPackage: org.cyclos.mobile, appium:automationName: UIAutomator2, appium:deviceName: Redmi Note 11, appium:platformVersion: 11, appium:udid: caa9d2b4, platformName: ANDROID}}]
+Capabilities {appium:appActivity: org.cyclos.mobile.MainActivity, appium:appPackage: org.cyclos.mobile, appium:automationName: UIAutomator2, appium:deviceName: Redmi Note 11, appium:platformVersion: 11, appium:udid: caa9d2b4, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+	at stepdefenition.Helperclass.precondition(Helperclass.java:32)
+	at stepdefenition.StepDefenitionCyclos.i_want_to_open_the_cyclos_app_and_open_using_demo_url(StepDefenitionCyclos.java:29)
+	at ✽.I want to open the cyclos app and open using demo URL(file:///C:/Users/Admin/eclipse-workspace/mobileautomate/src/test/java/Cyclos.feature:8)
+

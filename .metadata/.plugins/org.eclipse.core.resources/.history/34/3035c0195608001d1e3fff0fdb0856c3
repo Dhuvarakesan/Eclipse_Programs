@@ -1,0 +1,24 @@
+package logic;
+
+public class StringNameProcess {
+
+	public static void main(String[] args) {
+	String input1="dhuvarake";
+		int s1=input1.length();
+		String s1f1="";
+		String s1m1="";
+		String s1e1="";
+	        if(s1%3==0){
+	            int temp=0;
+	            for(int i=0;i<s1/3;i++) {
+	            s1f1+=input1.charAt(i);temp++;}
+	            for(int i=temp;i<s1/3+temp;i++) {
+	                 s1m1+=input1.charAt(i);temp++;}
+	            for(int i=temp;i<s1/3+temp;i++) {
+	                 s1e1+=input1.charAt(i);temp++;}
+	        }
+	        String res=s1f1+" "+s1m1+" "+s1e1+" ";
+	        System.out.println(res);
+	}
+
+}

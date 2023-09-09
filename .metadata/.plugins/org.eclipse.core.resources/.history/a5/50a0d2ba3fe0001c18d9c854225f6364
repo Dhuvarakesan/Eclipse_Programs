@@ -1,0 +1,21 @@
+package logic;
+
+public class EDemo {
+
+	public static void main(String[] args) {
+		
+		String aa="12345";
+		int[] q=new int[aa.length()];
+		char[] s=aa.toCharArray();
+		int wa=(int)(s[0]);
+		StringBuffer e=new StringBuffer(aa);
+		int b=10;
+		String w=Integer.toString(wa);
+		
+		e.reverse();
+		System.out.println(e);
+		System.out.println(w);
+}
+	}
+
+

@@ -1,0 +1,65 @@
+package ilink;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+class NameComparator implements Comparator<person>{  
+public int compare(person s1,person s2){  
+return s1.fname.compareTo(s2.fname);  
+}
+}
+class AgeComparator implements Comparator<person>{  
+public int compare(person s1,person s2){  
+if(s1.id==s2.id)  
+return 0;  
+else if(s1.id>s2.id)  
+return 1;  
+else  
+return -1;  
+}  
+}
+ 
+class person{
+	String fname;
+	String lname;
+	int id;
+	person(String a,String b,int i){
+		fname=a;
+		lname=b;
+		this.id=i;
+	}
+	public String getFname() {
+		return fname;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	
+}
+public class Compdemo {
+
+	public static void main(String[] args) {
+		ArrayList<person> l=new ArrayList();
+		l.add(new person("dhuvara","kesan",10));
+		l.add(new person("jaga","selvam",23));
+		l.add(new person("anbu","rose",12));
+		l.add(new person("praveen","murugan",45));
+		System.out.println("by Name");
+		  Collections.sort(l,new NameComparator()); 
+		  for(person st: l){
+		  System.out.println(+st.id" "+st.fname+" "+st.lname); }
+		 System.out.println("by id");
+		Collections.sort(l,new AgeComparator());
+		for(person i:l) {
+			System.out.println(i.id+" "+i.fname+" "+i.lname);
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+package logic;
+
+import java.util.Arrays;
+
+public class Acc1 {
+	public static void main(String[] args) {
+		String in="abcd";
+		String inn="cbdad";
+		char a[]=in.toCharArray();
+		char b[]=inn.toCharArray();
+		Arrays.sort(a);
+		Arrays.sort(b);
+		int i=0;
+		for(;;) {
+			if(b[i]!=a[i]) {
+				System.out.println(b[i]);
+				break;
+			}
+			else
+				i++;
+		}
+		}
+	
+
+	}
+
+

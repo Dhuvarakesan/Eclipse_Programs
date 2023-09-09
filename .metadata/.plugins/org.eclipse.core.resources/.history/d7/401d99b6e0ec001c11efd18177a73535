@@ -1,0 +1,57 @@
+package logic;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Collections;
+public class FrequencyOfArray {
+
+	public static void main(String[] args) {
+		int[] arr=new int [] {2,3,2,4,5,12,2,3,3,3,12};
+		ArrayList<Integer> a=new ArrayList<>();
+		HashSet<Integer>s=new HashSet<>();
+		for(int i:arr) {
+			a.add(i);
+			s.add(i);
+		}
+		ArrayList<Integer> fre=new ArrayList<>();
+		
+		for(int i:s) {
+		int f=Collections.frequency(a,i);
+		fre.add(f);
+		
+		}
+		Collections.sort(fre);
+		Collections.reverse(fre);
+		int res[]=new int[arr.length];
+		LinkedList<Integer> ee=new LinkedList<>();
+		int k=0;
+		int r=0;
+		System.out.println(fre);
+		for(int i:s) {
+		if(fre.get(k)==Collections.frequency(a,i)) {
+			for(int j=0;j<4;j++) {
+				System.out.print(i);
+				System.out.println("j:"+j);
+				System.out.println("fre.get(k)"+fre.get(k));
+				ee.add(i);
+				k++;
+			}
+		}
+		/*
+		 * else { k++; }
+		 */
+			
+			}
+		
+		//System.out.println(fre.get(fre.size()-1));
+		System.out.println(ee);
+			}
+}
+
+		
+
+	
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;num&apos; in &apos;com.demoStreams.ToUpperCase.main(...)&apos; to &apos;name&apos;&#x0D;&#x0A;- Original project: &apos;DemoStreams&apos;&#x0D;&#x0A;- Original element: &apos;com.demoStreams.ToUpperCase.main(String[]).num&apos;&#x0D;&#x0A;- Renamed element: &apos;num&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;num&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.demoStreams{ToUpperCase.java[ToUpperCase~main~\[QString;@num!254!294!273!275!QArrayList\&lt;QString;&gt;;!0!false" name="name" references="true" stamp="1684504215588" version="1.0"/>
+</session>

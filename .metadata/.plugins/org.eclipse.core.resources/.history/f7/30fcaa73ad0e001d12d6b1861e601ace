@@ -1,0 +1,24 @@
+package training;
+
+public class Withoutsplit {
+
+	public static void main(String[] args) {
+	  String in="my name is dhuvarakesan";
+	  char[] a=in.toCharArray();
+	  String t="";
+	  String res="";
+	  for(int i=0;i<a.length;i++) {
+		  if(a[i]!=' ') {
+			  t+=a[i]+"";
+		  }
+		  else {
+			  res+=t+" ";
+			  t="";
+			  ++i;
+		  }
+	  }
+	  System.out.println(res);
+
+	}
+
+}

@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package com.regular;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * program to check whether the given phone number is valid or not
+ * @author dhuvarakesan
+ * 4-6-2023
+ */
+public class CheckingMobileNumber {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.print("INPUT :");
+		String number=in.next();
+		Pattern pObj = Pattern.compile("[+91][6-9][0-9]{9}");
+		Matcher mObj = pObj.matcher(number);
+		if(mObj.find())
+			System.out.println("ValidNumber : "+number);
+		else
+			System.out.println("INvalid Number : "+number);
+
+	}
+
+}

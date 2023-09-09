@@ -1,0 +1,15 @@
+package logic;
+
+public class EDemo {
+
+	public static void main(String[] args) {
+		
+		String aa="dhuvara";
+		StringBuffer e=new StringBuffer(aa);
+		
+		e.reverse();
+		System.out.println(e);
+}
+	}
+
+

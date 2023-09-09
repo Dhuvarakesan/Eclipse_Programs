@@ -1,0 +1,26 @@
+package logic;
+
+import java.util.Scanner;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		int num=in.nextInt();
+		boolean f= true;
+		for(int i=2;i<num;++i) {
+				if(num%i==0) {
+					f=false;
+					break;
+				}
+			}
+			if(f)
+				System.out.print(num+" "+"prime");
+			else
+				System.out.println("not a prime");
+			//return num;
+		
+
+	}
+
+}

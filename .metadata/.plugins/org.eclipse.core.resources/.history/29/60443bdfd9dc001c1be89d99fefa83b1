@@ -1,0 +1,25 @@
+package logic;
+
+public class SumOfPowerOfDigits {
+
+	public static void main(String[] args) {
+		int num=123;
+		String length=num+"";
+		int size=length.length();
+		int[] arr=new int[size];
+		int i=0;
+		while(num!=0) {
+			int rem=num%10;
+			arr[i]=rem;
+			i+=1;
+			num/=10;
+			}
+	for(int i:arr)
+		System.out.println(i);
+		
+			
+		}
+
+	}
+
+

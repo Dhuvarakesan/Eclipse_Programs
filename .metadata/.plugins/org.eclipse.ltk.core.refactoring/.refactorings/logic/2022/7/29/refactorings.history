@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;logic.Primesum&apos; to &apos;PrimeOddEvenPositionSum&apos;&#x0D;&#x0A;- Original project: &apos;logic&apos;&#x0D;&#x0A;- Original element: &apos;logic.Primesum&apos;&#x0D;&#x0A;- Renamed element: &apos;logic.PrimeOddEvenPositionSum&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Primesum&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;logic{Primesum.java[Primesum" matchStrategy="1" name="PrimeOddEvenPositionSum" qualified="false" references="true" similarDeclarations="true" stamp="1657952963794" textual="false" version="1.0"/>
+</session>

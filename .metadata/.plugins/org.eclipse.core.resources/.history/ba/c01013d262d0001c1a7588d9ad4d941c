@@ -1,0 +1,43 @@
+package training;
+
+public class Box {
+	 int width;
+	 int height;
+	 int depth;
+	 int volume;
+	public void setwidth(int width) {
+		this.width=width;
+	}
+	public void setheight(int height) {
+		this.height=height;
+	}
+	public void setdepth(int depth) {
+		this.depth=depth;
+	}
+	public void box(int width,int height,int depth) {
+		this.width=width;
+		this.height=height;
+		this.depth=depth;
+		
+	}
+	public int getwidth() {
+		return width;
+	}
+	public int getheight() {
+		return height;
+	}
+	public int getdepth() {
+		return depth;
+	}
+ public void volume () {
+	 
+	volume=width*height*depth;
+	System.out.print(volume);
+	 //return volume;
+}
+ public void disp() {
+		System.out.print(volume);
+		}
+
+ 
+}

@@ -1,0 +1,16 @@
+package training;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Box a=new Box();
+		a.box(10, 20, 1);
+		a.setdepth(10);
+		a.setheight(0);
+		a.setwidth(1);
+		a.volume();
+        a.disp();
+        System.out.print(a.getwidth());
+	}
+
+}

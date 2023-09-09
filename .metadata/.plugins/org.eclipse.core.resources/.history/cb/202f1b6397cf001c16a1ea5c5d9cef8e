@@ -1,0 +1,35 @@
+package training;
+import java.util.*;
+public class SearchElements {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int size=s.nextInt();
+		System.out.print("Size:");
+		int[] arr=new int[size];
+		System.out.print("\n");
+		for(int i=0;i<size;i++) {
+			arr[i]=s.nextInt();
+		}
+		System.out.print("\n");
+		System.out.print("Target:");
+		int tar=s.nextInt();
+		for(int i=0;i<size;i++) {
+			if(arr[i]==tar) {
+				System.out.println(i);
+			break;
+		}
+			else {
+				System.out.println("-1");
+				break;
+			}
+		
+			
+				
+			
+		}
+		
+
+	}
+	
+}

@@ -1,0 +1,22 @@
+package practice;
+
+import java.util.Arrays;
+
+public class DeleteduplicateNum {
+
+	public static void main(String[] args) {
+		int in[]=new int[] {1,2,3,4,5,6,7,2,3,4,5,6,7};
+		int size=in.length;
+		for(int i=0;i<in.length;++i) {
+			for(int j=0;j<in.length-1;++j) {
+				if(in[i]==in[j]&&i!=j) {
+					int temp=in[j];
+					in[j]=in[j+1];
+					size--;
+				}
+			}
+		}
+System.out.println(Arrays.toString(in));
+	}
+
+}

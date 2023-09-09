@@ -1,0 +1,17 @@
+package logic;
+
+public class DuplicateRemove {
+
+	public static void main(String[] args) {
+		String in="1234557";
+		String out="";
+		char []a=in.toCharArray();
+		for(char i:a) {
+		if(out.indexOf(i)==-1){
+			out+=i;
+		}
+		}
+			System.out.println(out);
+	}
+
+}

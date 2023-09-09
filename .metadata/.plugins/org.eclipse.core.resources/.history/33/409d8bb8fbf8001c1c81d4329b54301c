@@ -1,0 +1,20 @@
+package practice;
+
+public class Caplet {
+public static void main(String[] args) {
+	String a="dhuvara mani pochi";
+	String d[]=a.split(" ");
+	String res="";
+	for(String i:d) {
+		char[]w=i.toCharArray();
+		String q="";
+		Character.toString(Character.toLowerCase(w[0]));
+		for(int j=1;j<i.length();j++) {
+			q+=Character.toString(w[j]);
+		}
+		res+=q+" ";
+		q="";
+	}
+	System.out.println(res);
+}
+}

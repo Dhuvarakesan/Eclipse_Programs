@@ -1,0 +1,27 @@
+package logic;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class PossiblePalindromee {
+
+	public static void main(String[] args) {
+		int num=12343;
+		String n=Integer.toString(num);
+		char[] c=n.toCharArray();
+		ArrayList<Character> list=new  ArrayList<>();
+		for(char i:c)
+				list.add(i);
+		for(int i=0;i<c.length;i++) {Collections.shuffle(list);
+		System.out.println(list);}
+       String a="12345";
+       String[] str=new String[a.length()];
+       int size=a.length();
+       for(int i=0;i<a.length();i++) {
+       str[i]=a.substring(size-1,size);
+       size--;
+	}
+for(String i:str)
+	System.out.println(i+" ");
+}
+}

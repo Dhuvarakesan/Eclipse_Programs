@@ -1,0 +1,11 @@
+package training;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Box a=new Box();
+		a.box(10,10,10);
+        a.disp();
+	}
+
+}

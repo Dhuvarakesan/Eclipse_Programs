@@ -1,0 +1,38 @@
+package practice;
+
+import java.util.Arrays;
+
+public class DeleteduplicateNum {
+
+	public static void main(String[] args) {
+		int in[]=new int[] {1,987,658,9,7,45,3,2,1,1,1,234,4,4,5,5,5,6,66,77,7654,234,213,12,12,2,23,3,4,56,67,2,3,4,5,6,7,2,3,4,5,6,7};
+		int Ssize=in.length;
+		String a[]=new String[Ssize];
+		int k=0;
+		for(int i:in)
+			a[k++]=Integer.toString(i);
+		
+			for(int i=0;i<Ssize;i++) {
+			for(int j=0;j<Ssize;j++) {
+				if(a[i].equals(a[j])&&i!=j) {
+					a[j]="#";
+					break;
+				}
+			}
+		}
+			for(String i:a) {
+				if(i.equals("#"))
+					Ssize--;
+			}
+			int re[]=new int [Ssize];
+			k=0;
+			for(String i:a) {
+				if(i!="#")
+				re[k++]=Integer.parseInt(i);
+				
+				
+			}
+System.out.println(Arrays.toString(re));
+	}
+
+}

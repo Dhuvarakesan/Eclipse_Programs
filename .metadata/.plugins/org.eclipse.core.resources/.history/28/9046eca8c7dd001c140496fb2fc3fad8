@@ -1,0 +1,17 @@
+package logic;
+
+import java.util.Arrays;
+
+public class Demo {
+
+	public static void main(String[] args) {
+	String []a=new String[]{"1","2","4","5"};
+	String []b=new String[]{"1","4","2","5"};
+
+if(Arrays.equals(a,b))
+	System.out.print("Equal");
+else
+	System.out.print("Not Equal");
+
+}
+}

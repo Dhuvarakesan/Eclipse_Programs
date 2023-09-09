@@ -1,0 +1,9 @@
+1669990970484	Rename type 'Tariff_below500'
+1670000854496	Delete element
+1670003056407	Rename type 'Cal_Below500'
+1670003103731	Rename type 'Set_Tariff_Below500'
+1670003162288	Rename field 'u101_400'
+1670003188137	Rename field 'u401_500'
+1670003214096	Rename field 'u501_600'
+1670003272670	Rename field 'u601_800'
+1670003350013	Rename type 'Set_Tariff_Above500'

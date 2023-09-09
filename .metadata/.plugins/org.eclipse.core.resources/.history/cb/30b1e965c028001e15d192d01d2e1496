@@ -1,0 +1,115 @@
+package StepDefinition;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import StepDefinition.HelperClass;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class StepDefinition_3_1 extends HelperClass {
+
+//	@Before
+//	public void inti() {
+//		driver=HelperClass.getDriver();
+//		System.out.println("m1");
+//		HelperClass.precondition();
+//		
+//		System.out.println("m2");
+//		HelperClass.login();
+//		System.out.println("m3");
+//		
+//	
+//	}
+
+	@Given("user should click the User to User Payment")
+	public void user_should_click_the_User_to_User_Payment() {
+		HelperClass.precondition();
+		HelperClass.login();
+		Payment_Repository.banking.click();
+		Payment_Repository.payment_To_User.click();
+	}
+
+	@Given("user should fill the to user field")
+	public void user_should_fill_the_to_user_field() {
+		Payment_Repository.contact_List.click();
+		Payment_Repository.car_Repair.click();
+	}
+
+	@Given("User Should Enter The Amount")
+	public void user_should_enter_the_amount() {
+		Payment_Repository.amount.sendKeys("10");
+		Payment_Repository.description.click();
+		Payment_Repository.description.sendKeys("Demo Payment");
+	}
+
+	@Given("User Should Select Scheduling")
+	public void user_should_select_scheduling() {
+		Payment_Repository.click_Scheduling.click();
+		List<WebElement> list = Payment_Repository.listOfElements_InScheduling;
+		HelperClass.selectFromList(list, "Pay now");// select Webelements from list using text
+		// Assert.assertTrue(false);
+		// Scheduled
+//	    Monthly installments
+//	    Recurring payments
+	}
+
+	@Then("User Should Click Next And Confirm The Payment")
+	public void user_should_click_next_and_confirm_the_payment() throws InterruptedException {
+		Payment_Repository.next_Bt.click();
+		Payment_Repository.confirm_Payment.click();
+//	   Thread.sleep(9000);
+//	   Alert alert= driver.switchTo().alert();
+//	   Thread.sleep(8000);
+//	   String alertMessage=alert.getText();
+//	   Thread.sleep(5000);
+//	   //WebElement f_Alert = Payment_Repository.failure_Alert;
+		// WebElement s_Alert = Payment_Repository.success_Alert;
+//	   System.out.println("AlertMessage:"+alertMessage);
+//	   System.out.println("Alert :"+driver.findElement(By.className("notification-message")).getText());
+//	   //System.out.println("AlertMessage:"+s_Alert.getText());
+		// Assert.assertEquals(new String("The payment was successfully
+		// processed"),f_Alert.getText() );
+	}
+	@Given("User Should Select\\(Scheduled) Scheduling {string}")
+	public void user_should_select_scheduled_scheduling(String string) {
+		Payment_Repository.click_Scheduling.click();
+		List<WebElement> list = Payment_Repository.listOfElements_InScheduling;
+		HelperClass.selectFromList(list, string);
+		Payment_Repository.date.click();
+		Payment_Repository.date.sendKeys("12");
+		Payment_Repository.date.sendKeys("12");
+		Payment_Repository.date.sendKeys("2023");
+	}
+
+//@Given("User Should Select\\(Monthly installments) Scheduling {string}")
+//public void user_should_select_monthly_installments_scheduling(String string) {
+//	
+//}
+@Given("User Should Select\\(Monthly installments) Scheduling {string},{string}")
+public void user_should_select_monthly_installments_scheduling(String string, String string2) {
+	Payment_Repository.click_Scheduling.click();
+	List<WebElement> list = Payment_Repository.listOfElements_InScheduling;
+	HelperClass.selectFromList(list, string);
+	Payment_Repository.number_Of_Installments.click();
+	Payment_Repository.number_Of_Installments.sendKeys(string2);
+}
+
+	@Then("Close the Browser")
+	public void close_the_browser() {
+		driver.close();
+	}
+
+}

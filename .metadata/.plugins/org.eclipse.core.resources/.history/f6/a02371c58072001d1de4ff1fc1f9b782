@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main extends CalculateAbove500{
+
+	public static void main(String[] args) {
+		Main mainobject=new Main();
+		Scanner input=new Scanner(System.in);
+		System.out.print("ENTER NO UNITS:");
+		int no_units=input.nextInt();
+		System.out.print(mainobject.calculate(no_units));
+		input.close();
+	}
+
+}
